@@ -1,0 +1,6 @@
+.container{
+    display:flex;
+    width:80vmax;
+    margin:auto;
+    padding: 1rem;
+}

@@ -4,7 +4,7 @@ export default function NavBar() {
     return (
         <nav className="navContainer">
             <div>
-                <ul className="listContainer">
+                <ul className="listContainer ">
                     <li className="listItem">
                         <a className="listLink" href="/">
                            <span className='language'>ENG</span>  
