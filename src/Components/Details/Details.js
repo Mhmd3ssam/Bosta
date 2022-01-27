@@ -18,12 +18,12 @@ export default function Details({ data }) {
                 {data?.TransitEvents.map(({state,timestamp,reason}) => {
                     return (
                         <tr>
-                            <td >
+                            <td>
                                 <>
                                     <p>{translateState(state)}</p>
-                                    {reason?reason:null}
+                                    {reason?<span style={{color:'#fbbe0d'}}>{reason}</span>:null}
                                 </>
-                             </td>
+                            </td>
                             <td>{generateTime(timestamp)}</td>
                             <td>{generateDate(timestamp)}</td>
                             <td></td>

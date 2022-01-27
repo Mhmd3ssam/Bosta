@@ -9,7 +9,7 @@ export function generateTime(timestamp){
     let charAt = fullTime.charAt(indx);
     let hours = fullTime.split(charAt)[0];
     let ments = fullTime.split(charAt)[1];
-    return `${hours}:${ments}`;
+    return `${hours}:${ments}${hours>12?' pm':' am'}`;
 }
 
 export function translateState(state){
