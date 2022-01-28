@@ -1,4 +1,4 @@
-.container{
+.detailsContainer{
     display:grid;
     grid-template-columns: 1fr 2fr;
     column-gap:2rem;
@@ -6,3 +6,10 @@
     margin:auto;
     padding: 1rem;
 }
+
+.progressContainer{
+    width:80vmax;
+    margin:auto;
+    padding: 1rem; 
+}
+

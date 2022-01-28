@@ -1,0 +1,10 @@
+
+.detailContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap:2rem;
+}
+
+.title{
+    color:#a4adc0;
+}

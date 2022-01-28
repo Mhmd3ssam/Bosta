@@ -3,6 +3,7 @@ import './style.css';
 import {useFetch} from '../Hooks/useFetch';
 
 import NavBar from '../Components/NavBar/';
+import Progress from '../Components/Progress'
 import Details from '../Components/Details';
 import Adress from '../Components/Adress';
 
@@ -16,7 +17,10 @@ export default function TrackingService() {
     return(
         <>
            <NavBar/> 
-           <section className='container'>
+           <section className='progressContainer'>
+               <Progress data={data}/>
+           </section>
+           <section className='detailsContainer'>
                 <Adress data={data}/>    
                 <Details data={data}/>
            </section>  

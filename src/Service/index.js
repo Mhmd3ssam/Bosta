@@ -25,7 +25,7 @@ export function translateState(state){
         case 'OUT_FOR_DELIVERY':
             return 'الشحنة خرجت للتسليم'
         case 'DELIVERED':
-            return 'تم التسليم'  
+            return 'تم التسليم الشحنة'  
         case 'RECEIVED_DELIVERY_LOCATION':
             return 'تم استلام موقع تسليم الشحنة'  
         case 'WAITING_FOR_CUSTOMER_ACTION':
@@ -50,3 +50,11 @@ export function translateHup(hup){
             return ' الإسكندرية'
     }
 }
+
+
+
+
+
+
+
+
