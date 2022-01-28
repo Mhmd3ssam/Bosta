@@ -7,4 +7,73 @@
 
 .title{
     color:#a4adc0;
+    text-align: center;
+}
+.titleValue{
+    text-align: center;
+    font-weight: bold;
+}
+.barText{
+    text-align: center;
+}
+.progressContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    
+
+}
+
+.progressBar{
+    padding-top:.5rem;
+    background-color: #eeeeee;
+    margin-bottom:3.1rem;
+}
+
+
+.rightIconContainer{
+    position: relative;
+    width:18%;
+}
+.rightIconContainer img{
+    width: 100%;
+    position: absolute;
+    transform: translate(189px,-29px);
+    border-radius: 100%;
+    border: 1px solid #a4adc0 ;
+    display: inline-block;
+    padding: 5px;
+    background-color: white;
+}
+
+
+.leftIconContainer{
+    position: relative;
+    width:18%; 
+}
+.leftIconContainer img{
+    width: 100%;
+    position: absolute;
+    transform: translate(-73px,-29px);
+    border-radius: 100%;
+    border: 1px solid #a4adc0 ;
+    display: inline-block;
+    padding: 5px;
+    background-color: white;
+    
+}
+.middleIconContainer{
+    position: relative;
+    width:18%; 
+}
+.middleIconContainer img{
+    width: 100%;
+    position: absolute;
+    transform: translate(63px,-29px);
+    border-radius: 100%;
+    border: 1px solid #a4adc0 ;
+    display: inline-block;
+    padding: 5px;
+    background-color: white;
+    
 }
