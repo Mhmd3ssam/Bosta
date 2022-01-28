@@ -5,11 +5,10 @@
 .tapleHeader{
     background-color: #fafafa !important;
     color:#a4adc0;
-    border: 1px soild #fafafa !important;
-   
+    border: 1px soild #fafafa !important;  
 }
 
 .tableContainer{
-    max-width: 50%;
-    margin:auto;
+    max-width: 100%;
+    margin:auto; 
 }

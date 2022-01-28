@@ -1,5 +1,7 @@
 .container{
-    display:flex;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap:2rem;
     width:80vmax;
     margin:auto;
     padding: 1rem;

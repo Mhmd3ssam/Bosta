@@ -35,3 +35,18 @@ export function translateState(state){
 
     }
 }
+
+export function translateHup(hup){
+    switch(hup){
+        case 'Bosta HQ':
+            return 'الفرع الرئيسي'
+        case 'Katamya Hub':
+            return 'القطامية'
+        case 'Tanta Hub':
+            return 'طنطا'
+        case 'Mohandseen Hub':
+            return 'المهندسين'  
+        case 'Alexandria Hub':
+            return ' الإسكندرية'
+    }
+}

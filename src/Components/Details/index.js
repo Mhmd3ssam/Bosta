@@ -1,11 +1,12 @@
 import React from 'react';
 import './style.css'
-import { generateDate, generateTime, translateState } from '../../Service';
+import { generateDate, generateTime, translateState, translateHup } from '../../Service';
 
 export default function Details({ data }) {
-    console.log(data);
     return (
-        <table className="table table-bordered tableContainer">
+        <div>
+             <p>{'تفاصيل الشحنة'}</p>
+            <table className="table table-bordered tableContainer">
             <thead>
                 <tr>
                     <th scope="col" className="tapleHeader">تفاصيل</th>
@@ -15,7 +16,7 @@ export default function Details({ data }) {
                 </tr>
             </thead>
             <tbody>
-                {data?.TransitEvents.map(({state,timestamp,reason}) => {
+                {data?.TransitEvents.map(({state,timestamp,reason,hub}) => {
                     return (
                         <tr>
                             <td>
@@ -26,11 +27,13 @@ export default function Details({ data }) {
                             </td>
                             <td>{generateTime(timestamp)}</td>
                             <td>{generateDate(timestamp)}</td>
-                            <td></td>
+                            <td>{hub?translateHup(hub):'ـ ـ'}</td>
                         </tr>
                     )
                 })}
             </tbody>
         </table>
+        </div>
+        
     );
 }

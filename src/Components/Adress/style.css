@@ -1,0 +1,37 @@
+.adress{
+    background-color: #fafafa !important;
+    color:#566fa2;
+    border: 2px solid #fafafa;
+    padding: .9rem;
+    border-radius: 10px ;
+}
+
+.QSectionContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .4rem;
+    padding:2rem;
+    border: 2px solid #fafafa;
+    border-radius: 10px ;
+}
+
+.imageContainer{
+    width: 50%;
+}
+
+.imageContainer img{
+    width: 100%;   
+}
+
+.brimaryBtn{
+   padding-right:1.6em;
+   padding-left: 1.6em;
+   padding-top: .2em;
+   padding-bottom:.2em;
+   background-color:#f40005;
+   outline: none;
+   border-radius: 10px ;
+   color: white;
+   border: 1px solid transparent;
+   text-align: center;
+}
