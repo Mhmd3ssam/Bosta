@@ -1,5 +1,7 @@
 import React,{useState} from "react";
 import "./style.css";
+import { getRecevingDate, getLastUpdate, getLastState } from '../../Service';
+
 
 export default function Progress({data}) {
  
@@ -7,7 +9,9 @@ export default function Progress({data}) {
     <div className="detailContainer">
       <div>
         <p className='title'>{'موعد التسليم خلال'}</p>
-        <p></p>
+        <p>
+            {getRecevingDate(data?.PromisedDate)}
+        </p>
       </div>
       <div>
         <p className='title'>{'اسم التاجر'}</p>
@@ -15,11 +19,15 @@ export default function Progress({data}) {
       </div>
       <div>
         <p className='title'>{'اخر تحديث'}</p>
-        <p></p>
+        <p>
+            {getLastUpdate(data?.CurrentStatus.timestamp)}
+        </p>
       </div>
       <div>
         <p className='title'>{`${data?.TrackingNumber} رقم الشحنة`}</p>
-        <p></p>
+        <p>
+            {getLastState(data?.CurrentStatus.state)}
+        </p>
       </div>
     </div>
   );

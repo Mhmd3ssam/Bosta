@@ -8,7 +8,7 @@ import Details from '../Components/Details';
 import Adress from '../Components/Adress';
 
 export default function TrackingService() {
-    const{data,loading}= useFetch('https://tracking.bosta.co/shipments/track/9442984');
+    const{data,loading}= useFetch('https://tracking.bosta.co/shipments/track/1094442');
 
     useEffect(()=>{
         document.title = 'Bosta | Fastest Courier Service in Egypt';

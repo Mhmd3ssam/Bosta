@@ -26,7 +26,7 @@ export default function Details({ data }) {
                                 </>
                             </td>
                             <td>{generateTime(timestamp)}</td>
-                            <td>{generateDate(timestamp)}</td>
+                            <td>{generateDate(timestamp).replaceAll('-','/')}</td>
                             <td>{hub?translateHup(hub):'ـ ـ'}</td>
                         </tr>
                     )
