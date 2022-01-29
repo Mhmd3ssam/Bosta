@@ -8,7 +8,7 @@ import correct from '../../assets/correct.png';
 import check from "../../assets/check.png";
 
 export default function Progress({ data }) {
-    const [currentState, setCurrentState] = useState("OUT_FOR_DELIVERY");
+    const [currentState, setCurrentState] = useState(data?.CurrentStatus.state);
 
     return (
         <>
@@ -24,14 +24,18 @@ export default function Progress({ data }) {
                     <p className="titleValue">{'SOUQ.COM'}</p>
                 </div>
                 <div>
-                    <p className='title textEnd'>{'اخر تحديث'}</p>
-                    <p className="titleValue textEnd">
+                    <p className='title '>{'اخر تحديث'}</p>
+                    <p className="titleValue ">
                         {getLastUpdate(data?.CurrentStatus.timestamp)}
                     </p>
                 </div>
                 <div>
-                    <p className='title textEnd'>{`${data?.TrackingNumber} رقم الشحنة`}</p>
-                    <p className="titleValue textEnd">
+                    <p className='title '>{`${data?.TrackingNumber} رقم الشحنة`}</p>
+                    <p className="titleValue"
+                        style={{
+                            color:currentState === "DELIVERED"?"#4cac4c":"#ffd200"
+                        }}
+                    >
                         {getLastState(data?.CurrentStatus.state)}
                     </p>
                 </div>
@@ -114,7 +118,7 @@ export default function Progress({ data }) {
         </>
     );
 }
-// "TICKET_CREATED" "PACKAGE_RECEIVED" "OUT_FOR_DELIVERY" "DELIVERED"
+// "TICKET_CREATED" "PACKAGE_RECEIVED" "OUT_FOR_DELIVERY" "DELIVERED" "CANCELED"
 // green #4cac4c yellow #ffd200
 
 //style={{
