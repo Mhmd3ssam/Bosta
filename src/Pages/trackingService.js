@@ -17,7 +17,7 @@ export default function TrackingService() {
     return(
         <>
            <NavBar/> 
-           <section className='progressContainer'>
+           <section className='progressSectionContainer'>
                <Progress data={data}/>
            </section>
            <section className='detailsContainer'>

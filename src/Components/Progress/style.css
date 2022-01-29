@@ -1,8 +1,15 @@
-
 .detailContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap:2rem;
+    column-gap:1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 3rem;
+    border: 2px solid #a4adc0;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
 }
 
 .title{
@@ -13,21 +20,34 @@
     text-align: center;
     font-weight: bold;
 }
-.barText{
+.textCenter{
     text-align: center;
+}
+.textStart{
+    text-align:start;
+}
+.textEnd{
+    text-align:end;
+
 }
 .progressContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     list-style-type: none;
-    
-
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border: 2px solid #a4adc0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .progressBar{
     padding-top:.5rem;
     background-color: #eeeeee;
     margin-bottom:3.1rem;
+
 }
 
 
@@ -38,7 +58,7 @@
 .rightIconContainer img{
     width: 100%;
     position: absolute;
-    transform: translate(189px,-29px);
+    transform: translate(382%,-63%);
     border-radius: 100%;
     border: 1px solid #a4adc0 ;
     display: inline-block;
@@ -54,7 +74,7 @@
 .leftIconContainer img{
     width: 100%;
     position: absolute;
-    transform: translate(-73px,-29px);
+    transform: translate(-121%,-60%);
     border-radius: 100%;
     border: 1px solid #a4adc0 ;
     display: inline-block;
@@ -69,7 +89,7 @@
 .middleIconContainer img{
     width: 100%;
     position: absolute;
-    transform: translate(63px,-29px);
+    transform: translate(123%,-60%);
     border-radius: 100%;
     border: 1px solid #a4adc0 ;
     display: inline-block;

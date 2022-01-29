@@ -4,12 +4,16 @@
     column-gap:2rem;
     width:80vmax;
     margin:auto;
-    padding: 1rem;
 }
 
-.progressContainer{
+.progressSectionContainer{
+    /* border: 2px solid #fafafa; */
+    border-radius: 10px ;
     width:80vmax;
     margin:auto;
-    padding: 1rem; 
+    padding: 1rem;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+
 }
 

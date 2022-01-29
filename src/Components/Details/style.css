@@ -1,7 +1,7 @@
 *{
     font-family: 'Cairo';
     text-align: end;
-    font-weight: adjustment;
+    box-sizing: border-box;
 }
 .tapleHeader{
     background-color: #fafafa !important;
