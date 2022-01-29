@@ -9,6 +9,7 @@
     box-sizing: border-box;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    position: relative;
 
 }
 
@@ -20,35 +21,27 @@
     text-align: center;
     font-weight: bold;
 }
-.textCenter{
-    text-align: center;
-}
-.textStart{
-    text-align:start;
-}
-.textEnd{
-    text-align:end;
-
-}
 .progressContainer{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     list-style-type: none;
     padding-top: 4rem;
-    padding-bottom: 1.5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    border: 2px solid #fafafa;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border: 2px solid #fafafa; 
+    border-bottom: transparent;
 }
 
 .progressBar{
     padding-top:.5rem;
     background-color: #eeeeee;
     margin-bottom:3.1rem;
-
+    
 }
+
+
+
+
 
 
 .rightIconContainer{
@@ -89,11 +82,29 @@
 .middleIconContainer img{
     width: 100%;
     position: absolute;
-    transform: translate(123%,-60%);
+    transform: translate(-120%,-60%);
     border-radius: 100%;
     border: 1px solid #a4adc0 ;
     display: inline-block;
     padding: 5px;
     background-color: white;
     
+}
+
+.textProgressContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-bottom: 2px solid #fafafa;
+    border-right: 2px solid #fafafa;
+    border-left: 2px solid #fafafa;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.text-start{
+    text-align: start; 
+}
+.text-center{
+    text-align: center;
 }
